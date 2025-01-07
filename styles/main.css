@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* LEL VIDEO DE LA CLASE SE SIGUE EN 1:45:00 */
+
+header{
+    background-color: #007383;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header img{
+    width:  10%;
+}
+header nav ul {
+    color: #E53935;
+    list-style: none;
+    display: flex;
+    gap: 200px;
+}
+header nav ul li{
+    color: #E53935;
+    gap: 200px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main .textos{
+    text-align: center;
+}
+main .textos h1 span{
+    display: block;
+}
+main img{
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+main div img{
+    align-items:center ;
+    justify-content: center;
+    width: 90%;
+}
+main .img{
+    display: flex;
+    justify-content: center;
+}
