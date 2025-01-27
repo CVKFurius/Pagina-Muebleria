@@ -4,23 +4,23 @@
   box-sizing: border-box;
 }
 
-/*VIDEO EN 1:38*/
-.nav-bg {
+/* estilos header */
+header .nav-bg {
   background-color: #007383;
 }
-
 header img {
   width: 25%;
 }
 
+/* estilos main */
 .indexmain {
   background-color: #016674;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, auto);
-  padding: 1.5rem;
-  row-gap: 1rem;
+  grid-template-rows: repeat 4, auto;
   align-content: center;
+  gap: 1, 5;
+  padding: 1.5rem;
 }
 .indexmain .img-banner {
   grid-column: span 2;
@@ -33,11 +33,6 @@ header img {
   height: auto;
   object-fit: cover;
   display: block;
-}
-.indexmain .item.textalign {
-  grid-column: span 2;
-  text-align: center;
-  margin-top: 1rem;
 }
 .indexmain .secondimg {
   grid-column: span 2;
@@ -53,7 +48,21 @@ header img {
 }
 .indexmain .item .textalign {
   text-align: center;
+  margin-top: 2rem;
+}
+.indexmain .item.textalign {
+  grid-column: span 2;
+  text-align: center;
   margin-top: 1rem;
+}
+.indexmain .secondimg {
+  grid-column: span 2;
+}
+.indexmain .secondimg .imgmain {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .productosmain {
@@ -61,15 +70,16 @@ header img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, auto);
-  padding: 1.5rem;
-  row-gap: 1rem;
   align-content: center;
+  gap: 1, 5;
+  padding: 1.5rem;
 }
 .productosmain div .imgmain {
   width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
+  padding: 5%;
 }
 .productosmain div .textalign {
   text-align: center;
@@ -84,9 +94,9 @@ header img {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(4, auto);
-  padding: 1.5rem;
-  row-gap: 1rem;
   align-content: center;
+  gap: 1, 5;
+  padding: 1.5rem;
 }
 .nostrosmain div .textalign {
   text-align: center;
@@ -98,9 +108,9 @@ header img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
-  padding: 1.5rem;
-  row-gap: 1rem;
   align-content: center;
+  gap: 1, 5;
+  padding: 1.5rem;
 }
 .serviciosmain div .imgserv {
   width: 100%;
@@ -120,18 +130,20 @@ header img {
   background-color: #016674;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-auto-rows: auto;
+  grid-template-rows: auto;
+  align-content: center;
+  gap: 1, 5;
   padding: 1.5rem;
-  align-items: center;
 }
 .contactomain div {
   display: contents;
 }
 .contactomain div .imgserv {
-  grid-column: 1;
   width: 100%;
   height: auto;
   object-fit: cover;
+  display: block;
+  grid-column: span 1;
 }
 .contactomain div .spantext {
   grid-column: 2;
@@ -139,6 +151,7 @@ header img {
   text-align: left;
 }
 
+/* section */
 section {
   background-color: #007383;
   display: flex;
@@ -155,41 +168,12 @@ section div img {
   width: 100%;
 }
 
+/* footer */
 footer {
   background-color: #007383;
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .secondimg {
-    height: 50%;
-  }
-  header img {
-    width: 50%;
-  }
-  .imgmain {
-    grid-column: span 2;
-    width: 50%;
-    height: auto;
-    object-fit: cover;
-    padding: 2rem;
-  }
-  .textalign {
-    text-align: center;
-    margin-top: 5rem;
-    font-size: 40px;
-  }
-  .imgserv {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    grid-column: span 1;
-  }
-  .spantext {
-    font-size: 30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .secondimg {
     height: 50%;
@@ -219,6 +203,9 @@ footer {
   .spantext {
     font-size: 30px;
   }
+  .spantext-tres {
+    font-size: 25px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .imgmain {
@@ -230,6 +217,13 @@ footer {
   }
   header img {
     width: 25%;
+  }
+  header div {
+    padding-left: 25rem;
+    width: 150%;
+  }
+  header div ul li {
+    font-size: 150%;
   }
   .textalign {
     text-align: center;

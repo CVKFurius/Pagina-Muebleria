@@ -1,0 +1,235 @@
+@import "../utilidades/mixin";
+
+/* estilos header */
+header{
+    .nav-bg{
+      background-color: $bg-color-secundario ;
+    }
+      img{
+          width: 25%;
+      }
+  }
+
+
+/* estilos main */
+.indexmain{
+    background-color: $bg-color;
+    @include grid (grid,repeat(2,1fr),repeat (4,auto));
+    padding: 1.5rem;
+    .img-banner{
+        
+        @include imgbanner;
+        .imgmain{
+            @include imgmain;
+        }
+    }
+    .secondimg{
+        grid-column: span 2;
+        .imgmain{
+            @include imgmain;
+        }
+    }
+    .item{
+        grid-column: span 2;
+          .textalign{
+          text-align: center;
+          margin-top: 2rem;
+          }
+      }
+      .item.textalign{
+        grid-column: span 2;
+        text-align: center;
+        margin-top: 1rem;
+    }
+      .secondimg{
+        grid-column: span 2;
+        .imgmain{
+            @include imgmain;
+        }
+    }
+}
+.productosmain{
+    background-color: $bg-color;
+    @include grid(grid,repeat(2, 1fr), repeat(4, auto));
+    padding: 1.5rem; 
+    div{
+        .imgmain{
+            @include imgmain;
+            padding: 5%;
+        }
+        .textalign{
+            text-align: center;
+            margin-top: 1rem;
+            h1{
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+.nostrosmain{
+    background-color: $bg-color;
+    @include grid(grid,repeat(1, 1fr),repeat(4, auto));
+    padding: 1.5rem;
+    div{
+        .textalign{
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+}
+.serviciosmain{
+    background-color: $bg-color;
+    @include grid(grid, repeat(3,1fr),repeat(4, auto));
+    padding: 1.5rem;
+        div{
+            .imgserv{
+               @include imgserv;
+            }
+        }
+        .spantext{
+            grid-column: 2 / span 2;
+        }
+        .spantext-tres{
+            grid-column: span 3;
+        }
+}
+.contactomain {
+    background-color: #016674;
+    @include grid(grid,1fr 2fr,auto);
+    padding: 1.5rem;
+
+    div {
+        display: contents; 
+
+        .imgserv {
+            @include imgserv
+        }
+
+        .spantext {
+            grid-column: 2; 
+            align-self: center; 
+            text-align: left; 
+        }
+    }
+}
+/* section */
+section {
+    background-color: $bg-color-secundario;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+        img{
+            width: 100%;
+
+
+            }
+        }
+}
+/* footer */
+footer {
+    background-color: $bg-color-secundario;
+    
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .secondimg {
+      height: 50%;
+    }
+  
+    header img {
+      width: 29%;
+    }
+  
+    .imgmain {
+      grid-column: span 2;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      padding: 2rem;
+    }
+  
+    .textalign {
+      text-align: center;
+      margin-top: 5rem;
+      font-size: 40px;
+    }
+  
+    .imgserv {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      grid-column: span 1;
+    }
+    .spantext {
+        font-size: 30px;
+      }
+    .spantext-tres {
+      font-size: 25px;
+    }
+  }
+  
+  
+  @media screen and (min-width: 1024px) {
+    .imgmain {
+      grid-column: span 2;
+      width: 60%;  
+      height: auto;
+      object-fit: cover;
+      padding: 1rem;
+    }
+  
+    header {
+      img {
+      width: 25%;  
+      }
+        div{
+        padding-left: 25rem;
+        width: 150%;
+          ul{
+            li{
+            font-size: 150%;
+            }
+          }
+        }
+    }
+  
+    .textalign {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 5rem;  
+    }
+  
+    .imgserv {
+      width: 60%;  
+      height: 10%;
+      object-fit: cover;
+      display: block;
+      grid-column: span 1;
+    }
+    .textalign {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 2rem; 
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-wrap: break-word;
+      }
+      .serviciosmain{
+        .spantext-tres{
+            font-size: 150%;
+        }
+      }
+  }
+  
+  
+  
