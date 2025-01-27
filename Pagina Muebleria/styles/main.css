@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*VIDEO EN 1:38*/
+.nav-bg {
+  background-color: #007383;
+}
+
+header img {
+  width: 25%;
+}
+
+.indexmain {
+  background-color: #016674;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  padding: 1.5rem;
+  row-gap: 1rem;
+  align-content: center;
+}
+.indexmain .img-banner {
+  grid-column: span 2;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.indexmain .img-banner .imgmain {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.indexmain .item.textalign {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 1rem;
+}
+.indexmain .secondimg {
+  grid-column: span 2;
+}
+.indexmain .secondimg .imgmain {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.indexmain .item {
+  grid-column: span 2;
+}
+.indexmain .item .textalign {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.productosmain {
+  background-color: #016674;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  padding: 1.5rem;
+  row-gap: 1rem;
+  align-content: center;
+}
+.productosmain div .imgmain {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.productosmain div .textalign {
+  text-align: center;
+  margin-top: 1rem;
+}
+.productosmain div .textalign h1 span {
+  font-weight: bold;
+}
+
+.nostrosmain {
+  background-color: #016674;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, auto);
+  padding: 1.5rem;
+  row-gap: 1rem;
+  align-content: center;
+}
+.nostrosmain div .textalign {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.serviciosmain {
+  background-color: #016674;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  padding: 1.5rem;
+  row-gap: 1rem;
+  align-content: center;
+}
+.serviciosmain div .imgserv {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  grid-column: span 1;
+}
+.serviciosmain .spantext {
+  grid-column: 2/span 2;
+}
+.serviciosmain .spantext-tres {
+  grid-column: span 3;
+}
+
+.contactomain {
+  background-color: #016674;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: auto;
+  padding: 1.5rem;
+  align-items: center;
+}
+.contactomain div {
+  display: contents;
+}
+.contactomain div .imgserv {
+  grid-column: 1;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.contactomain div .spantext {
+  grid-column: 2;
+  align-self: center;
+  text-align: left;
+}
+
+section {
+  background-color: #007383;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+}
+section div img {
+  width: 100%;
+}
+
+footer {
+  background-color: #007383;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .secondimg {
+    height: 50%;
+  }
+  header img {
+    width: 50%;
+  }
+  .imgmain {
+    grid-column: span 2;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    padding: 2rem;
+  }
+  .textalign {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 40px;
+  }
+  .imgserv {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    grid-column: span 1;
+  }
+  .spantext {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .secondimg {
+    height: 50%;
+  }
+  header img {
+    width: 29%;
+  }
+  .imgmain {
+    grid-column: span 2;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 2rem;
+  }
+  .textalign {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 40px;
+  }
+  .imgserv {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    grid-column: span 1;
+  }
+  .spantext {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .imgmain {
+    grid-column: span 2;
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    padding: 1rem;
+  }
+  header img {
+    width: 25%;
+  }
+  .textalign {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 5rem;
+  }
+  .imgserv {
+    width: 60%;
+    height: 10%;
+    object-fit: cover;
+    display: block;
+    grid-column: span 1;
+  }
+  .textalign {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-wrap: break-word;
+  }
+  .serviciosmain .spantext-tres {
+    font-size: 150%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
